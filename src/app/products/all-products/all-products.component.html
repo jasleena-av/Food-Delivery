@@ -1,0 +1,140 @@
+<header class="banner py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-light">
+            <h3 class="display-5 fw-bolder" style="color: rgb(253, 247, 247);">Your favourite food,<br><span >delivered to You</span> </h3>
+            <p class="lead fw-normal text-dark-50 mb-0"></p>
+            
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container mt-5 mb-5">
+      
+      <div class="text">
+        <h3 class="main-title text-center">Welcome</h3>
+        <h2 class="title text-center">How it Works</h2>
+      </div>
+      <div class="row-items">
+        <div class="container-item">
+          <div class="container-img">
+            <img src="https://cdn.onlinewebfonts.com/svg/img_249283.png" alt="">
+
+          </div>
+          <h4>Choose Your Favourite </h4>
+          <p>Choose your favorite meals and order online or by phone. It's easy to customize your order.</p>
+
+        </div>
+         
+        <div class="container-item">
+          <div class="container-img">
+            <img src="https://www.pngarts.com/files/7/Food-Delivery-Transparent-Images.png" alt="">
+
+          </div>
+          <h4>We Deliver Your Meals</h4>
+          <p>We prepared and delivered meals arrive at your door.Fresh, healthy food delivery when you want it. </p>
+
+        </div>
+         
+        <div class="container-item">
+          <div class="container-img">
+            <img src="https://cdn2.iconfinder.com/data/icons/food-restaurant-1/128/flat-11-512.png" alt="">
+
+          </div>
+          <h4>Eat And Enjoy</h4>
+          <p>No shopping, no cooking, no counting and no cleaning. Enjoy your healthy meals with your family.</p>
+
+        </div>
+
+
+        
+      </div>
+
+    </div>
+</section>
+
+<!-- top brands -->
+<div class="main " style="margin-top: 200px;">
+  <h3 class="main-title text-center mb-5">Brands</h3>
+  <h2 class="title text-center mt-3 ">Top Brands for You</h2>
+</div>
+<section style="background-color:rgb(186, 190, 186);display: block;margin-top: 100px;">
+  <div class="container brands p-5 me-2 mt-5" >
+    
+    <div class="row">
+      <div class="col-md-3">
+        <div class="food-item" >
+          <img width="130px"   src="https://th.bing.com/th/id/OIP.RYLSRWx-Ls5dV8rGJAQcBwHaG8?pid=ImgDet&rs=1" alt="">
+          
+        </div>
+
+      </div>
+      <div class="col-md-3">
+        <div class="food-item">
+          <img width="130px"  src="https://b.zmtcdn.com/data/brand_creatives/logos/9742d760cf95e9dbf9b869ca9c753f8f_1613213868.png?output-format=webp" alt="">
+          
+
+        </div>
+
+      </div>
+      <div class="col-md-3">
+        <div class="food-item">
+          <img width="130px"  src="https://b.zmtcdn.com/data/brand_creatives/logos/466f8fc74274145f3b21795c3d21816d_1589433910.png?output-format=webp" alt="">
+          
+
+        </div>
+
+      </div>
+      <div class="col-md-3">
+        <div class="food-item">
+          <img width="130px" src="https://purepng.com/public/uploads/large/burger-king-logo-xua.png" alt="">
+          
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- restaurants -->
+<section style="margin-top: 200px;">
+  <div class="container">
+    <h3 class="main-title text-center"> Categories</h3>
+    <div class="title text-center mt-5 mb-5"><h2>Choose & Enjoy</h2></div>
+    <div class="row">
+      <div class="col-md-3 mt-5" *ngFor="let product of allProducts" >
+        <div class="card " style="width: 18rem;height: 23rem;">
+          <a routerLink=""><img height="200px" [src]="product.image" class="card-img-top" alt="...">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">{{product.title}}</h5>
+            
+              <div class="d-flex justify-content-between" >
+                <p class="price-title">₹{{product.price}}</p>
+                
+                <p>25min</p>
+                
+              </div>
+              
+                
+            
+            
+            
+          </div>
+          <div class="d-flex justify-content-center " >
+            <a  class="btn btn-outline-dark mt-auto w-100" routerLink="/view-product/{{product.id}}">View</a> 
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+

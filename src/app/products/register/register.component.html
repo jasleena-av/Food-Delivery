@@ -1,0 +1,72 @@
+<div class="container d-flex justify-content-center mt-5">
+    <div class="card mb-3" style="width: 50rem;height: 28rem;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img style="height: 28rem;"  src="https://images.pexels.com/photos/12365244/pexels-photo-12365244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-center fs-4">  REGISTER</h5>
+              <div class="card-text">
+                <form [formGroup]="detailsform"  class=" p-3" (ngSubmit)="registerbtn()" >
+  
+                
+                <div class="form-floating mb-3">
+                  <input name="username" formControlName="username" id="username" placeholder="Username" type="text" class="form-control" required>
+                  <label for="username">Username</label>
+                </div>
+          
+                <!-- username error msg -->
+                <div *ngIf="this.detailsform.get('username')?.errors&&this.detailsform.get('username')?.touched" class="text-danger mb-3">
+                  Invalid Username
+          
+                </div>
+                <div class="form-floating mb-3">
+                  <input name="email" formControlName="email" id="accno" placeholder="Account Number" type="text" class="form-control" required>
+                  <label for="accno">email</label>
+                </div>
+          
+                 <!-- accountno error msg -->
+                 <div *ngIf="this.detailsform.get('email')?.errors&&this.detailsform.get('email')?.touched" class="text-danger mb-3">
+                  Invalid email
+          
+                </div>
+                <div class="form-floating mb-3">
+                  <input name="password" formControlName="password" id="floatingpswd" placeholder="password" type="password" class="form-control" required>
+                  <label for="floatingpswd">Password</label>
+                </div>
+                 <!-- password error msg -->
+                <div *ngIf="this.detailsform.get('password')?.errors&&this.detailsform.get('password')?.touched" class="text-danger mb-3">
+                  Invalid password
+          
+                </div>
+          
+                <!-- registererror msg -->
+                <div class="mt-2 mb-2 text-danger fw-bolder">
+                
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-dark w-50 mt-5 ">Register
+    
+                  </button>
+                </div>
+          
+                
+                </form>
+               
+                
+                
+                
+               
+               
+  
+                </div>
+                
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+  

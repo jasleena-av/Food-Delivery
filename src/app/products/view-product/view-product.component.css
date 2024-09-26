@@ -1,0 +1,8 @@
+
+section img{
+    transition: 3s;
+}
+section img:hover{
+    transform: scale(1.3);
+    transition: 2s;
+}

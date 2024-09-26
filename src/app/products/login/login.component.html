@@ -1,0 +1,50 @@
+
+<div class="container d-flex justify-content-center mt-5">
+  <div class="card mb-3" style="width: 45rem;height: 25rem;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img style="height: 25rem;"  src="https://images.pexels.com/photos/1927383/pexels-photo-1927383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-center fs-3">Welcome back</h5>
+            <div class="card-text p-3">
+              <form [formGroup]="loginform" (ngSubmit)="loginclicked()">
+                <div class="form-floating mb-3">
+                  <input name="email" formControlName="email" id="accno" placeholder="Account Number" type="text" class="form-control" required>
+                  <label for="accno">email</label>
+            
+                </div>
+                <div *ngIf="this.loginform.get('email')?.errors&&this.loginform.get('email')?.touched" class="text-danger mb-3">
+                  Invalid email
+          
+                </div>
+                
+                <div class="form-floating mb-3">
+                  <input name="password" formControlName="password" id="floatingpswd" placeholder="password" type="password" class="form-control" required>
+                  <label for="floatingpswd">Password</label>
+            
+                </div>
+                <div *ngIf="this.loginform.get('password')?.errors&&this.loginform.get('password')?.touched" class="text-danger mb-3">
+                  Invalid password
+          
+                </div>
+              </form>
+              
+
+              <div class="d-grid mt-5">
+                <button  class="btn btn-lg btn-dark btn-login text-uppercase fw-bold mb-2" type="submit">Log In</button>
+                <div class="text-center">
+                  <a class="small" href="#">Forgot password?</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+  
+  
+  

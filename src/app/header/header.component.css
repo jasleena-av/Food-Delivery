@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Dosis:wght@200&family=Gloock&family=Instrument+Serif&family=Merriweather:ital,wght@0,300;0,700;1,300;1,400&family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@300&family=Roboto+Condensed:wght@300;400&family=Rubik:ital,wght@1,300&family=Schibsted+Grotesk&display=swap');
+
+.navbar-nav .nav-item{
+    font-family: 'Instrument Serif', serif;
+    color: black;
+    font-size: 18px;
+
+    
+    
+}
+.navbar-brand{
+    font-family: 'Anton', sans-serif;
+    font-family: 600;
+    color: rgb(12, 11, 11);
+    
+}
+.navbar-brand span{
+
+}
+.navbar-nav .nav-item:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,84 @@
+.banner{
+    background-image: url("https://images.pexels.com/photos/5639992/pexels-photo-5639992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+/* services */
+section .container .text p{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Abril Fatface', cursive;
+}
+.container-img img{
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    box-shadow: 5px 10px 30px rgb(85 85 85/20%);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.row-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap:2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 4rem;
+}
+.container-item{
+    background-color: #fff;
+    border : 1px solid #f0eded;
+    padding: 50px 10px;
+    border-radius: 4px;
+    transition: all 1s ease 0s;
+    cursor: pointer;
+}
+.container-item:hover{
+    box-shadow: 5px 30px 56.1276px rgb(55 55 55/12%);
+    border: 1px solid transparent;
+    transform: translateY(-4px);
+}
+.main {
+    margin-top: 250px;
+}
+.main-title{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(127, 144, 129);
+}
+.title{
+    font-family: 'Abril Fatface', cursive;
+   
+}
+
+/* brands */
+.food-item{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border : 1px solid #f0eded;
+    padding: 50px 30px;
+    border-radius: 50%;
+    transition: all 1s ease 0s;
+    cursor: pointer;
+}
+.price-title{
+    
+    font-size: 18px;
+    font-weight: 600;
+}
